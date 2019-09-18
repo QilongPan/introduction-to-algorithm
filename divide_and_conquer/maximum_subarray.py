@@ -32,7 +32,6 @@ def find_max_crossing_subarray(arr,low,mid,high):
             if arr_sum > left_sum:
                 left_sum = arr_sum
                 max_left = i 
-
     right_sum = None
     arr_sum = 0
     max_right = None
@@ -44,9 +43,7 @@ def find_max_crossing_subarray(arr,low,mid,high):
         else:
             if arr_sum > right_sum:
                 right_sum = arr_sum
-                max_right = i         
+                max_right = i
     return max_left,max_right,left_sum+right_sum
-
-
 
 
